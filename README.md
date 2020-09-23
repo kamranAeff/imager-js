@@ -11,11 +11,11 @@ $('#viewer1').imgadd();
 
 or
 
-$('#viewer1').imgadd({
-            tnWidth: '120px',
-            tnHeight: '120px',
-            fontSize: '55px',
-            plusInnerHtml: '<i class="fa fa-image"></i>',
-            plusBtnClass: undefined
+$('#viewer1').imgadd({<br>
+            tnWidth: '120px',<br>
+            tnHeight: '120px',<br>
+            fontSize: '55px',<br>
+            plusInnerHtml: '<i class="fa fa-image"></i>',<br>
+            plusBtnClass: undefined<br>
         });
 <code>
