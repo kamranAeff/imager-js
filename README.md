@@ -1,8 +1,8 @@
 # imager-js
 
- &lt;div class="imager-container" id="viewer1"&gt;
-                     &lt;div class="viewer no-show"&gt; &lt;/div&gt;
-                     &lt;div class="viewer-thumbs" name="image"&gt; &lt;/div&gt;
+ &lt;div class="imager-container" id="viewer1"&gt;<br>
+                     &lt;div class="viewer no-show"&gt; &lt;/div&gt;<br>
+                     &lt;div class="viewer-thumbs" name="image"&gt; &lt;/div&gt;<br>
  &lt;/div&gt;
 
 ----------------------------
