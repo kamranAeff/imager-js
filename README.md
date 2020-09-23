@@ -1,21 +1,22 @@
 # imager-js
 
+<pre>
  &lt;div class="imager-container" id="viewer1"&gt;<br>
-                     &lt;div class="viewer no-show"&gt; &lt;/div&gt;<br>
-                     &lt;div class="viewer-thumbs" name="image"&gt; &lt;/div&gt;<br>
+        &lt;div class="viewer no-show"&gt; &lt;/div&gt;<br>
+        &lt;div class="viewer-thumbs" name="image"&gt; &lt;/div&gt;<br>
  &lt;/div&gt;
-
+</pre>
 ----------------------------
-<code>
+<pre>
 $('#viewer1').imgadd();
 
 or
 
-$('#viewer1').imgadd({<br>
-            tnWidth: '120px',<br>
-            tnHeight: '120px',<br>
-            fontSize: '55px',<br>
-            plusInnerHtml: '<i class="fa fa-image"></i>',<br>
-            plusBtnClass: undefined<br>
+$('#viewer1').imgadd({
+            tnWidth: '120px',
+            tnHeight: '120px',
+            fontSize: '55px',
+            plusInnerHtml: '<i class="fa fa-image"></i>',
+            plusBtnClass: undefined
         });
-<code>
+<pre>
