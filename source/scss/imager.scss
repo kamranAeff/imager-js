@@ -41,7 +41,7 @@
         flex-wrap: wrap;
         row-gap: 20px;
         column-gap: 20px;
-        
+
         .img-thumb {
             cursor: pointer;
             background-size: cover;
@@ -51,7 +51,6 @@
         }
 
         & > .img-thumb {
-
             & input[type="file"] {
                 display: none;
             }
@@ -59,23 +58,32 @@
 
         .imager-rio {
             display: none;
-
-            &:checked + label {
+            & + label {
                 &.img-thumb {
-                    border:1px solid #7fad39;
-                    border-radius: 5px;
-
                     &::after {
                         font-family: "Font Awesome 5 Free";
                         content: "\f02e";
+                        font-weight: 700;
                         display: inline;
                         position: absolute;
                         z-index: 2;
                         color: #7fad39;
                         font-size: 30px;
-                        top: -12px;
+                        top: -23px;
                         right: 3px;
-                        font-weight: 700;
+                        transform: rotateX(90deg);
+                        transition: all 0.4s ease;
+                    }
+                }
+            }
+            &:checked + label {
+                &.img-thumb {
+                    border: 1px solid #7fad39;
+                    border-radius: 5px;
+
+                    &::after {
+                        top: -12px;
+                        transform: rotateX(0);
                     }
                 }
             }
