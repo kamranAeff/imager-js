@@ -1,0 +1,97 @@
+.imager-container > .viewer {
+  position: relative;
+  width: 100%;
+  height: 575px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 15px;
+}
+
+.imager-container > .viewer > .img-plus {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none !important;
+  border: none !important;
+  color: #7fad39;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.imager-container > .viewer:hover > .img-plus {
+  opacity: 1;
+}
+
+.imager-container > .viewer.no-show > .img-plus {
+  opacity: 1;
+}
+
+.imager-container > .viewer-thumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.imager-container > .viewer-thumbs .img-thumb {
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.imager-container > .viewer-thumbs > .img-thumb input[type="file"] {
+  display: none;
+}
+
+.imager-container > .viewer-thumbs .imager-rio {
+  display: none;
+}
+
+.imager-container > .viewer-thumbs .imager-rio + label.img-thumb::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02e";
+  font-weight: 700;
+  display: inline;
+  position: absolute;
+  z-index: 2;
+  color: #7fad39;
+  font-size: 30px;
+  top: -23px;
+  right: 3px;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.imager-container > .viewer-thumbs .imager-rio:checked + label.img-thumb {
+  border: 1px solid #7fad39;
+  border-radius: 5px;
+}
+
+.imager-container > .viewer-thumbs .imager-rio:checked + label.img-thumb::after {
+  top: -12px;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+/*# sourceMappingURL=imager.css.map */
